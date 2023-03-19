@@ -49,3 +49,20 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .con-sidebar{
+        display: flex;
+        gap: 2rem;
+    }
+
+    article{
+        /*Estos valores de flex osea que el article resibe un pixel mientras que aside recibe 3 se van repartiendo
+        por ejemplo si article recibe 300 el aside 900*/
+        flex: 1;
+    }
+
+    aside{
+        flex: 3;
+    }
+}

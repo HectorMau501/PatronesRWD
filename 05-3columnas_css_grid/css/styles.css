@@ -49,3 +49,21 @@ p {
 
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .contenedor-grid{
+        display: grid;
+        grid-template-areas: "izquierda contenido derecha";/*Este es como el template columnas*/ 
+        grid-template-columns: 1fr 3fr 1fr;/*Para acomodar las columnas de proporcion mas grande una que otra*/
+        grid-auto-flow: column;/*El contenido sera en columnas*/
+        column-gap: 2rem;
+    }
+
+    .contenido-principal{
+        grid-area: contenido;
+    }
+
+    .sidebar-1{
+        grid-area: izquierda;
+    }
+}

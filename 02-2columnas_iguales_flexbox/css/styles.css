@@ -39,3 +39,18 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .dos-columnas{
+        /*Con flex box todos los elementos hijos de van a mostrar de izquierda a derecha*/
+        display: flex; /*propiedad flex-box*/
+        justify-content: space-between;
+    }
+
+    /*Para que funcione el mover las columnas en dos se necesita el space y en los hijos 
+    ponerle flex; flex requiere una sintaxis el factor de crecimiento, otro el factor de hacerlo
+    mas pequeño y finalmente su tamaño base*/
+    .entrada-blog{
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
